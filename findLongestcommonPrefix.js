@@ -18,3 +18,6 @@ const prifixfinder = (str) =>{
 
 const result = prifixfinder(["sanjeev","sandeep" , "sajan"]);
 console.log(result)
+
+
+
