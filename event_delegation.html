@@ -69,3 +69,36 @@
     </script>
   </body>
 </html>
+
+
+
+
+<!-- <ul id="parentList"> → Parent container with multiple <li> children.
+
+Each <li> is a clickable item.
+
+JavaScript
+
+const parent = document.getElementById("parentList");
+
+Get the parent <ul> element.
+
+Instead of attaching a click event on every <li>, we only attach one event on the parent.
+
+parent.addEventListener("click", function(event) {...});
+
+Add a click event listener on the parent (<ul>).
+
+Whenever any child inside <ul> is clicked, the event bubbles up to the parent.
+
+if (event.target.tagName === "LI") {...}
+
+event.target → The actual element that was clicked.
+
+Check if the clicked element is an <li>.
+
+If yes, run the code inside.
+
+alert("You clicked on: " + event.target.textContent);
+
+Show which <li> was clicked by accessing its text. -->
