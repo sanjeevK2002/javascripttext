@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Delegation Example</title>
+  </head>
+  <body>
+    <ul
+      id="parentList"
+      style="
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+      "
+    >
+      <li
+        style="
+          border: 1px solid rgba(215, 67, 21, 0.4);
+          padding: 1rem;
+          border-radius: 50%;
+          cursor: pointer;
+          background-color: bisque;
+        "
+        onmouseover="this.style.background='blue'"
+        onmouseout="this.style.background='lightblue'"
+      >
+        Apple
+      </li>
+      <li
+        style="
+          border: 1px solid rgba(215, 67, 21, 0.4);
+          padding: 1rem;
+          border-radius: 50%;
+          cursor: pointer;
+          background-color: bisque;
+        "
+        onmouseover="this.style.background='blue'"
+        onmouseout="this.style.background='lightblue'"
+      >
+        Banana
+      </li>
+      <li
+        style="
+          border: 1px solid rgba(215, 67, 21, 0.4);
+          padding: 1rem;
+          border-radius: 50%;
+          cursor: pointer;
+          background-color: bisque;
+        "
+        onmouseover="this.style.background='blue'"
+        onmouseout="this.style.background='lightblue'"
+      >
+        Orange
+      </li>
+    </ul>
+
+    <script>
+      // 1. Select the parent element
+      const parent = document.getElementById("parentList");
+
+      // 2. Attach a single event listener to the parent
+      parent.addEventListener("click", function (event) {
+        // 3. Check if the clicked element is a <li>
+        if (event.target.tagName === "LI") {
+          alert("You clicked on: " + event.target.textContent);
+        }
+      });
+    </script>
+  </body>
+</html>
