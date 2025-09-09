@@ -30,3 +30,20 @@ console.log(result)
 // const array = [4,5,9,8,7,2,5,7]
 // const result =  findsum(array ,9 )
 // console.log(result)
+
+
+const FindIndex = (arr , target)=>{
+   const store = new Map();
+   for( let i= 0 ; i< arr.length ; i++){
+    const requiredNumber = target  - arr[i];
+    if(store.has(requiredNumber)){
+        return [store.get(requiredNumber) , i]
+    }
+    store.set(arr[i] , i)
+   }
+}
+
+const arr= [1,5,89,7,5,1,2,3,4,5,6,7,8,9];
+const target = 12;
+const gotResilt = FindIndex(arr , target)
+console.log(gotResilt);
