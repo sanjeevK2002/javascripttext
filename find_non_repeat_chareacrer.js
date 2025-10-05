@@ -17,7 +17,7 @@ const findNonRepeatingChar = (str) => {
 }
 
 const result = findNonRepeatingChar("swiss");
-console.log("first : -",result); 
+console.log("first : - ",result); 
 
 
 const findNonRepeatingChar2 = (str) =>{
