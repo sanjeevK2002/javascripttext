@@ -24,5 +24,5 @@ const countVowelandConsonent = (str)  =>{
        };
 }
 
-const result = countVowelandConsonent("sanjeev");
+const result = countVowelandConsonent("sanjeev paswan");
 console.log(result);

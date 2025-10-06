@@ -5,7 +5,7 @@ const responce = new Promise((resolve ,reject)=>{
 })
 
 responce.then((user)=>{
-    console.log(user);
+    console.log(`Your response is successful ${user} `);
 })
 .catch((error)=>{
     console.log("error");
