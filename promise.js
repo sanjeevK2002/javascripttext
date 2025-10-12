@@ -12,7 +12,8 @@ responce.then((user)=>{
 })
 
 
-const responce2 = new Promise((resolve ,reject)=>{
+const responce2 = new Promise(
+    (resolve ,reject)=>{
     setTimeout(()=>{
         let error = false;
         if(!error){
@@ -22,8 +23,8 @@ const responce2 = new Promise((resolve ,reject)=>{
             console.log("your promise has not been resolved");
             reject("sorry not fulfilled");
         }
-    },1000);
-});
+    },1000);}
+);
 responce2
 .then((user)=>{
     console.log(user);
