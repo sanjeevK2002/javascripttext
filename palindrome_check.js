@@ -1,8 +1,11 @@
 const checkPalindrome = (str) =>{
-// const reversedstr = str.split("").reverse().join("");
-const reverse = str.reverse();
-return reverse;
-// return str === reversedstr;
+const reverse = str.split("").reverse().join("");
+if(str === reverse){
+return reverse;}
+else{
+    return "not a palindrome"
 }
-const result = checkPalindrome("madam");
+
+}
+const result = checkPalindrome("sanjeev");
 console.log("is palindrome :- ", result);
