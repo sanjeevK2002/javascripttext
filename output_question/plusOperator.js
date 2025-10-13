@@ -71,6 +71,43 @@ console.log([] + {}); // '[object Object]'
 console.log({} + []); //0
 
 
+console.log(true + true); //2
+console.log(true + false); //1
+console.log(false + true); //1
+console.log(false + false); //0 
+console.log(true + 1); //2
+console.log(true + 0); //1
+console.log(false + 1); //1
+console.log(false + 0); //0
+console.log(true + '1'); //'true1'
+console.log(true + '0'); //'true0'
+console.log(false + '1'); //'false1'
+console.log(false + '0'); //'false0'
+
+console.log(true - true); //0
+
+console.log(0.5 + 0.2 === 0.7); // true // because 0.5 and 0.2 can be represented exactly in binary floating point
+
+console.log(0.1 + 0.2 === 0.3); //false // because 0.1 and 0.2 cannot be represented exactly in binary floating point
+
+console.log(0.1 + 0.2); //0.30000000000000004 // because 0.1 and 0.2 cannot be represented exactly in binary floating point
+
+console.log(0.5 + 0.2); //0.7 // because 0.5 and 0.2 can be represented exactly in binary floating point
+
+console.log(0.1 + 0.2 + 0.3); //0.6000000000000001 // because 0.1 and 0.2 and 0.3 cannot be represented exactly in binary floating point
+
+console.log(0.1 + 0.2 + 0.3 === 0.6); //false // because 0.1 and 0.2 and 0.3 cannot be represented exactly in binary floating point
+
+console.log(0.1 + 0.2 + 0.3 + 0.4); //1.0 // because 0.1 and 0.2 and 0.3 and 0.4 can be represented exactly in binary floating point
+
+console.log(0.1 + 0.2 + 0.3 + 0.4 === 1.0); //true // because 0.1 and 0.2 and 0.3 and 0.4 can be represented exactly in binary floating point
+
+console.log(0.1 + 0.2 + 0.3 + 0.4 + 0.5); //1.5 // because 0.1 and 0.2 and 0.3 and 0.4 and 0.5 can be represented exactly in binary floating point
+
+console.log(0.1 + 0.2 + 0.3 + 0.4 + 0.5 === 1.5); //true // because 0.1 and 0.2 and 0.3 and 0.4 and 0.5 can be represented exactly in binary floating point
+
+
+
 
 
 
