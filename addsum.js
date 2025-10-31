@@ -37,7 +37,8 @@ const FindIndex = (arr , target)=>{
    for( let i= 0 ; i< arr.length ; i++){
     const requiredNumber = target  - arr[i];
     if(store.has(requiredNumber)){
-        return [store.get(requiredNumber) , i]
+        // return [store.get(requiredNumber) , i]
+         return [requiredNumber , arr[i]]
     }
     store.set(arr[i] , i)
    }

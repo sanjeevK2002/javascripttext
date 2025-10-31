@@ -1,14 +1,14 @@
 //  function sayHi(){
 //     return (()=>0)()
 //  }
-//  console.log(typeof sayHi());  // output is "number"
+//  console.log(typeof sayHi());  // output is "number" , because the inner arrow function is immediately invoked with () , so it returns 0 which is of type number.
 
 // //-------------------------------------------------------------
 
 //  function sayHello(){
 //     return (()=>0)
 //  }
-//  console.log(typeof sayHello()); // output is "function"
+//  console.log(typeof sayHello()); // output is "function" , because the inner arrow function is returned without invoking it , so its type is function
 
 //  //----------------------------------------------------------
 //  console.log( typeof 1)   // number
@@ -19,7 +19,7 @@
 // (()=>{
 //    let x= (y=10)
 // })();
-// console.log(typeof x);  // undefined
+// console.log(typeof x);  // undefined , because x is declared with let inside the IIFE so it is not accessible outside the IIFE
 // console.log(global.y );  // 10
 
 //===========================
@@ -27,7 +27,7 @@
 // (()=>{
 //    let x = y = 10 ; 
 // })();
-// console.log(typeof y); // number because "y" is declared with let , const and var so it is global variable , y = 10 (number)
+// console.log(typeof y); // number, because y is assigned without var, let, or const, making it a global variable.
 
 //------------------------------------------------------------
 

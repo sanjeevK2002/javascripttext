@@ -7,7 +7,7 @@ const countVowelandConsonent = (str)  =>{
 
        const map =new Map();
        for(let i =0; i<str.length ; i++){
-              const char = str[i];
+              const char = str[i]; // str is string so we can access each character by index
               if(vowels.includes(char)){
                 voweCount++;
               }else if(char.toLowerCase() !== char.toUpperCase()){

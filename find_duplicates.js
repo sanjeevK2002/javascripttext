@@ -1,24 +1,18 @@
 // find duplicates
-const arr = [4,4,5,56,8,4,4,4,5,5,63,8]
-const removeDuplicate = (num)=>{
+const arr = [4, 4, 5, 56, 8, 4, 4, 4, 5, 5, 63, 8];
+const removeDuplicate = (num) => {
+  const seen = new Set();
+  const duplicates = new Set();
 
-const seen =  new Set();
-const duplicates = new Set();
-
-for(let value of num){
-    if(seen.has(value)){
-         duplicates.add(value);
+  for (let value of num) {
+    if (seen.has(value)) {
+      duplicates.add(value);
+    } else {
+      seen.add(value);
     }
-    else {
-        seen.add(value)
-    }
-}
-return [...duplicates];
+  }
+  return [...duplicates ];
+};
 
-
-}
-
-const result = removeDuplicate(arr)
+const result = removeDuplicate(arr);
 console.log(result);
-
-
